@@ -258,11 +258,11 @@ display.onRender = () =>
 	if(input.keymap.space && body.rest[1] === -1) {
 		body.accelerate([0, jumpspeed, 0], 1);
 	}
-	if(input.keymap.w) {
+	if(input.keymap.z) {
 		let vec = camera.getForward(runspeed);
 		body.move(vec, 1 / 60);
 	}
-	if(input.keymap.a) {
+	if(input.keymap.q) {
 		let vec = camera.getLeftward(runspeed);
 		body.move(vec, 1 / 60);
 	}
